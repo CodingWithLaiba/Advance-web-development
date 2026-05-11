@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  
+
+    <script>
+ // Write a JavaScript program to check whether a given number is a prime number or not.
+        function checkPrime(num){
+             for (let i = 2; i < num; i++) {
+        if (num % i == 0) {
+            document.write(num + " is not a Prime Number" + "<br>");
+            return;
+        }
+    }
+
+    document.write(num + " is a Prime Number"+ "<br>");
+}
+checkPrime(4);
+
+// let random_num= Math.floor(Math.random()*100)+2;
+// checkPrime(random_num);
+
+        // Write a JavaScript program to print even and odd numbers separately from 1 to 20.
+        for(let i =1;i<=20;i++){
+            if(i % 2 == 0){
+                document.write(i + " is a Even number" + "<br>" + "<br>");
+            }else{
+                document.write(i + " is a Odd number" + "<br>" + "<br>");
+            }
+        };
+
+       
+    </script>
+</body>
+</html>

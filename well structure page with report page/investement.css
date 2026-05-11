@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.6;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    color: #6f8ba4;
+    font-weight: 400;
+}
+
+img {
+    width: 100%;
+}
+
+nav {
+        background-color: #333;
+        padding: 5px;
+      }
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+      }
+      ul li {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .nav_links {
+        display: flex;
+        gap: 20px;
+        padding: 15px;
+      }
+      button {
+        background-color: crimson;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px;
+      }
+.container {
+    width: 100%;
+    max-width: 1320px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+} */
+
+/* .menu a {
+    color: black;
+}
+
+button {
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background-color: #e12355;
+    color: white;
+    transition: all 0.5s;
+    border-radius: none;
+} */
+
+/* .dropdown {
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    border-top: 6px solid #e12355;
+    text-align: start;
+    padding: 1rem .8rem;
+    position: absolute;
+    /*WITH RESPECT TO PARENT*/
+    /* display: none;
+    left: 0;
+    top: 60px;
+    z-index: 1; */
+/* } */ 
+
+/* .English:hover .dropdown {
+    display: block;
+} */
+
+.banner {
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+    min-height: 600px;
+}
+
+
+.banner::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 58, 102, 0.8);
+    top: 0;
+    left: 0;
+}
+
+.btn:hover {
+    background: #223a66;
+    color: #fff;
+    border-color: #223a66;
+    border-radius: 8px;
+}
+
+.cta:before {
+    position: absolute;
+    content: "";
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 58, 102, 0.95);
+}
+
+.section-cta {
+    margin-bottom: -160px;
+    /* margin-left: 25px; */
+    z-index: 1;
+    position: relative;
+}
+
+.divider {
+    width: 50px;
+    height: 5px;
+    background: #e12454;
+}
+
+.Services {
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 5px;
+    /* box-shadow: 0 0 38px 4px rgba(21, 40, 82, 0.07) */
+}
+
+.btn-loan:hover {
+    background: #e12355;
+    color: #fff;
+    border-color: #e12355;
+    border-radius: 8px;
+}
+
+.quote {
+    bottom: -26px;
+    color: #e12454;
+    opacity: 0.3;
+    font-size: 70px;
+    position: absolute;
+    left: 440px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #00000069;
+    cursor: pointer;
+}
+
+.dot:hover {
+    background-color: black;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #6f8ba4;
+    color: #fff;
+}
+
+.divider-2 {
+    width: 45px;
+    height: 3px;
+    background: #e12454;
+    margin-bottom: 10px;
+}
+
+.MCR:hover {
+    color: #e12355;
+}
+
+/* About page */
+.bg-image {
+    background: url(https://capitalinvestmentsltd.co.uk/public/theme/images/slider-bg-1.jpg) no-repeat 50% 50%;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+
+
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 58, 102, 0.8);
+    top: 0;
+    left: 0;
+
+}
+
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+.accordion {
+    margin: 60px auto;
+    width: 700px;
+}
+
+.accordion li {
+    /* margin: 20px; */
+    width: 100%;
+    /* padding: 10px; */
+}
+
+.accordion li label {
+    font-size: 22px;
+    font-weight: 700;
+    color: black;
+    padding: 10px;
+}
+
+label h3:hover {
+    color: #e12454;
+}
+
+.plus::before {
+    content: "+";
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+label:hover::before{
+    color: #e12454;
+}
+input[type="checkbox"] {
+    display: none;
+}
+
+.accordion .content {
+    margin-left: 30px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.accordion input[type="checkbox"]:checked + label + .content {
+    max-height: 300px;
+    
+
+}
+
+.accordion input[type="checkbox"]:checked +label::before {
+    content: "-";
+    font-size: 30px;
+    font-weight: 700;
+
+}
+.Contact{
+
+    border: 5px solid #eef2f6;
+   padding: 28px;
+}
+.input-wrap{
+height: 60px;
+    border: 1px solid #eef2f6;
+    box-shadow: none;
+    width: 100%;
+    background: #f4f9fc;
+}
+
+textarea:focus{
+    border: none;
+    outline: none;
+}
+.textarea{
+    height: auto;
+    border: 1px solid #eef2f6;
+    box-shadow: none;
+    width: 100%;
+    background: #f4f9fc;
+}
+.submit{
+    font-size: 0.8125rem;
+ 
+    letter-spacing: 0.5px;
+    padding: 0.75rem 2rem;
+    
+  
+    border-radius: 50px;
+    border: 2px solid transparent;
+    
+}
+.submit:hover{
+    background-color: #e12454;
+}
+.signup-logo{
+    max-width: 150px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    padding: 10px;
+}

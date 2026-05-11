@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+
+    <style>
+      body {
+        font-family: "Times New Roman", Times, serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+      }
+
+      nav {
+        background-color: #333;
+        padding: 5px;
+      }
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+      }
+      ul li {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .nav_links {
+        display: flex;
+        gap: 20px;
+        padding: 15px;
+      }
+      button {
+        background-color: crimson;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px;
+      }
+
+      /* Section Styling */
+      section {
+        margin: 20px 90px;
+      }
+
+      /* Section Title Line */
+      section h2 {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      section h2::after {
+        content: "";
+        flex: 1;
+        height: 2px;
+        background: black;
+        margin-left: 10px;
+      }
+
+      /* Intro */
+      .intro {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+      .intro h1 {
+        font-size: 36px;
+        margin-bottom: 5px;
+      }
+
+      .intro p {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 0;
+        color: crimson;
+      }
+
+      .contact_info {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      /* Skills */
+      .technical_skills {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .technical_skills li {
+        padding-bottom: 5px;
+      }
+
+      /* Experience Header Layout */
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+      }
+
+      /* Lists */
+      ul {
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+     <nav>
+      <ul>
+        <div class="nav_links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="investement.html">Investment</a></li>
+          <li><a href="cv.html">Resume</a></li>
+          <li><a href="bg_img.html">Background Image</a></li>
+        <li><a href="GridTemp.html">Template1</a></l>
+          <li><a href="GridTemp2.html">Template2</a></li>
+          <li><a href="report.html">Report Form</a></li>
+        </div>
+        <div style="margin-right: 30px">
+          <li>
+            <button><a href="signin.html">Log Out</a></button>
+                        <!-- <button><a href="index.html">Sign Up</a></button> -->
+
+          </li>
+        </div>
+      </ul>
+    </nav>
+    <div class="intro">
+      <h1>Laiba Ijaz</h1>
+      <p>Frontend Developer</p>
+      <div class="contact_info">
+        <span>+923364066035</span>
+        <span>|</span>
+        <span>laibaijaz@gmail.com</span>
+        <span>|</span>
+        <span>
+          <a
+            href="https://www.linkedin.com/in/laiba-ijaz-71745a27b/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </span>
+      </div>
+    </div>
+
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        Frontend Developer with hands-on experience in building responsive and
+        user-friendly web applications using HTML5, CSS3, Tailwind CSS,
+        Bootstrap, and React.js. Experienced in developing clean UI components,
+        implementing modern JavaScript (ES6+), and working in collaborative team
+        environments.
+        <br /><br />
+        Strong understanding of responsive design principles and component-based
+        architecture. Currently seeking an entry-level Frontend or React
+        Developer position to contribute technical skills and grow within a
+        professional development team.
+      </p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+    
+      <p><strong>Technical Skills:</strong></p>
+      <ul class="technical_skills">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript (ES6+)</li>
+        <li>Tailwind CSS</li>
+        <li>Bootstrap</li>
+        <li>React.js</li>
+        <li>Git</li>
+        <li>Responsive Design</li>
+        <li>Problem-Solving</li>
+        <li>Communication</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+
+      <div class="job-header">
+        <span>Frontend Developer Intern – CodeSyncs, Lahore</span>
+        <span>Jan 2024 – June 2024</span>
+      </div>
+
+      <ul>
+        <li>
+          Developed responsive and visually appealing web pages using HTML, CSS,
+          and Tailwind CSS.
+        </li>
+        <li>Built mobile-first layouts using Bootstrap grid system.</li>
+        <li>Implemented interactive UI components using JavaScript.</li>
+        <li>
+          Collaborated with senior developers to learn best practices and
+          improve coding skills.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+
+      <p><strong>Bachelor of Science in Computer Science</strong></p>
+      <p>Virtual University, Sheikhupura<br />March 2024 – Feb 2026</p>
+
+      <p><strong>ADP Computer Science</strong></p>
+      <p>Riphah International College<br />Nov 2021 – Aug 2023</p>
+    </section>
+  </body>
+</html>

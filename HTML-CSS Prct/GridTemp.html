@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Templet 1</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /* gap: 5px; */
+      }
+      nav {
+        background-color: #333;
+        padding: 0px;
+      }
+      nav ul {
+        list-style-type: none;
+        display: flex;
+        gap: 5px;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 0;
+        padding: 0;
+      }
+      ul li {
+        font-weight: bold;
+        font-size: 20px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      .nav_links {
+        display: flex;
+        gap: 20px;
+        padding: 15px;
+      }
+      button {
+        background-color: crimson;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px;
+      }
+      .header {
+        background-color: black;
+        color: white;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .header a {
+        padding: 8px 15px;
+        text-decoration: none;
+        color: white;
+      }
+
+      .header a:hover {
+        background-color: red;
+        color: #e4dddd;
+      }
+      .sidebar {
+        background-color: rgb(128, 128, 155);
+        color: white;
+        display: flex;
+        flex-direction: column;
+        font-size: 20px;
+        /* padding: 20px 10px; */
+      }
+      .sidebar a {
+        text-decoration: none;
+        padding: 10px;
+      }
+      .sidebar a:hover {
+        background-color: rgb(219, 22, 61);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div style="grid-column: span 12">
+    <nav>
+      <ul>
+        <div class="nav_links">
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="investement.html">Investment</a></li>
+          <li><a href="cv.html">Resume</a></li>
+          <li><a href="bg_img.html">Background Image</a></li>
+        <li><a href="GridTemp.html">Template1</a></l>
+          <li><a href="GridTemp2.html">Template2</a></li>
+          <li><a href="report.html">Report Form</a></li>
+        </div>
+        <div style="margin-right: 30px">
+          <li>
+            <button><a href="signin.html">Log Out</a></button>
+                        <!-- <button><a href="index.html">Sign Up</a></button> -->
+
+          </li>
+        </div>
+      </ul>
+    </nav>
+      </div>
+      <div style="grid-column: span 12">
+        <div class="header">
+          <a href="#">Html</a>
+          <a href="#">Css</a>
+          <a href="#">JavaScript</a>
+          <a href="#">SQL</a>
+          <a href="#">Java</a>
+          <a href="#">PHP</a>
+          <a href="#">React</a>
+          <a href="#">Node.js</a>
+          <a href="#">Angular</a>
+          <a href="#">Vue.js</a>
+          <a href="#">Bootstrap</a>
+          <a href="#">C#</a>
+        </div>
+      </div>
+      <div style="grid-column: span 2">
+        <div class="sidebar">
+          <a href="#">Html Tutorial</a>
+          <a href="#">Html Home</a>
+          <a href="#">Html Elements</a>
+          <a href="#">Html Heading</a>
+          <a href="#">Html Css</a>
+          <a href="#">Html Style</a>
+          <a href="#">Html Link</a>
+          <a href="#">Html Image</a>
+          <a href="#">Html Table</a>
+          <a href="#">Html List</a>
+          <a href="#">Html Form</a>
+          <a href="#">Html Iframe</a>
+          <a href="#">Html Semantics</a>
+          <a href="#">Html Entities</a> 
+          <a href="#">Html Colors</a>
+          <a href="#">Html Symbols</a>
+          <a href="#">Html Character Sets</a>
+        </div>
+      </div>
+      <div style="grid-column: span 8; padding: 20px">
+        <h1 >Html Tutorial</h1>
+        <h2>Learn Html </h2>
+        <p>HTML is the standard markup language for Web pages.<br>With HTML you can create your own Website.<br>
+HTML is easy to learn - You will enjoy it!</p>
+      </div>
+      <div style="grid-column: span 2">
+        <img
+          src="https://img.freepik.com/premium-photo/premium-quality-vector-images-illustration-3d-images_1266756-1089.jpg?semt=ais_user_personalization&w=740&q=80"
+          alt="Adds"
+          width="100%"
+        />
+      </div>
+      <div style="grid-column: span 12">
+        <p style="text-align: center">Copyright @ 2026 Html Tutorial</p>
+      </div>
+    </div>
+  </body>
+</html>

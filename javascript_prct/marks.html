@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate Marks</title>
+  </head>
+  <body>
+    <script>
+      function calculateMarks(English, Maths, Biology) {
+        let TotalMarks = 300;
+        let obtainMarks = English + Maths + Biology;
+        let percentage = (obtainMarks / TotalMarks) * 100;
+        let Average = obtainMarks / 3;
+        document.write("Obtain marks are: " + obtainMarks + "<br>");
+        document.write("Average Marks are: " + Average + "<br>");
+        document.write("Percentage are: " + percentage + "<br>");
+
+        if (percentage >= 80) {
+          document.write(
+            "Your grade is A+ and your marks are: " + obtainMarks + "<br>",
+          );
+        } else if (percentage >= 60) {
+          document.write(
+            "Your grade is B+ and your marks are: " + obtainMarks + "<br>",
+          );
+        } else if (percentage >= 40) {
+          document.write(
+            "Very poor Your grade is C+ and your mark are: " +
+              obtainMarks +
+              "<br>",
+          );
+        }
+      }
+      calculateMarks(100, 60, 80);
+      
+    </script>
+  </body>
+</html>

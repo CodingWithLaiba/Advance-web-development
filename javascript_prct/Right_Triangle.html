@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3 id="name"></h3>
+    <p id="demo"></p>
+
+    <script>
+      for (let i = 1; i <= 8; i++) {
+        for (let j = 1; j <= i; j++) {
+          document.write("* ");
+        }
+
+        document.write("<br>");
+      }
+
+      <!-- Task 26: Use the Switch statement to display the current day of the week. -->
+      let day;
+      let date = new Date().getDay();
+      switch (date) {
+        case 0:
+          day = "Sunday";
+          break;
+        case 1:
+          day = "Monday";
+          break;
+        case 2:
+          day = "Tuesday";
+          break;
+        case 3:
+          day = "Wednesday";
+          break;
+        case 4:
+          day = "Thursday";
+          break;
+        case 5:
+          day = "Friday";
+          break;
+        case 6:
+          day = "Saturday";
+          break;
+        default:
+          break;
+      }
+      document.getElementById("demo").innerHTML = "Today is " + day;
+
+      //Task 27 : Write a Program to display count, from 5 to 15
+      // using for loop
+      // for(let i=5;i<=15;i++){
+      //     document.write(i+"<br>");
+      // }
+
+      // using while loop
+      //   let i = 5;
+      //   while (i <= 15) {
+      //     document.write(i + "<br>");
+      //     i++;
+      //   }
+
+      // using do while loop
+      let i = 5;
+      do {
+        document.write(i + "<br>");
+        i++;
+      } while (i <= 15);
+
+      //Task 28: Display your name on the screen
+      document.getElementById("name").innerHTML = "Laiba Ijaz";
+
+      //Task 29 : Use the If...else statement  to write a code to Display “Good Morning” or “Good Afternoon” according to current time.
+
+      let time = new Date().getHours();
+      if (time < 12) {
+        document.write("Good Morning" + "<br>");
+      } else {
+        document.write("Good AfterNoon" + "<br>");
+      }
+    </script>
+  </body>
+</html>

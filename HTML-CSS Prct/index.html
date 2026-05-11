@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        /* nav{
+            background-color: #333;
+            padding: 5px;
+             */
+        /* } */
+        /* nav ul{
+            list-style-type: none;
+            display: flex;
+            gap: 15px;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        ul li{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+           
+        }
+        .nav_links {
+            display: flex;
+            gap: 20px;
+            padding: 15px;
+        }
+        button {
+            background-color: rgb(219, 22, 61);
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 20px;
+            
+        } */
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .Sign_In{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top:10%;
+            background-color: rgb(128, 128, 155);
+            border: 1px solid #333;
+            border-radius: 2%;
+            width: 25%;
+            padding: 5px;
+        }
+        input[type="submit"]{
+            cursor: pointer;
+            
+        }
+    </style>
+</head>
+<body>
+    <!-- <nav>
+      <ul>
+        <div class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="cv.html">Resume</a></li>
+          <li><a href="bg_img.html">Background Image</a></li>
+        <li><a href="GridTemp.html">Template1</a></l>
+          <li><a href="GridTemp2.html">Template2</a></li>
+          <li><a href="report.html">Report Form</a></li>
+        </div>
+        <div style="margin-right: 30px">
+          <li>
+            <button><a href="signin.html">Sign In</a></button>
+            <button><a href="signup.html">Sign Up</a></button>
+          </li>
+        </div>
+      </ul>
+    </nav> -->
+<div class="container">
+    <div class="Sign_In">
+        <h2>Sign Up</h2>
+        <form action="signin.html">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name = "email"><br><br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password"><br><br>
+            <!-- Radio -->
+            <label for="">Chosse your favariout language:</label><br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="javascript">JavaScript</label> <br> 
+            <!-- Checkbox    -->
+            <label>Select your Skills:</label><br>
+            <input type="checkbox" name="Skill1" id="Skill1" value="Html">
+            <label for="Skill1">Html</label><br>
+            <input type="checkbox" name="Skill2" id="Skill2" value="Css">
+            <label for="Skill1">Css</label><br>
+            <input type="checkbox" name="Skill3" id="Skill3" value="Javascript">
+            <label for="Skill3">Javacript</label><br>
+            <input type="checkbox" name="Skill4" id="Skill4" value="React">
+            <label for="Skill4">React</label><br><br>
+            <!-- Textarea -->
+             <label for="w3review">Description:</label><br>
+
+            <textarea id="w3review" name="w3review" rows="4" cols="40">
+            </textarea><br><br>
+            <input type="submit" value="Sign up">
+
+    </div>
+    </div>
+</body>
+</html> 

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // program that print a table using form loop
+      // var number = Math.floor(Math.random()*50)+1;
+      var number = 10;
+      for (i = 1; i <= 10; i++) {
+        var result = i * number;
+        document.write(number + " * " + i + " = " + result + "<br>");
+      }
+
+      // Function for empolyee salary
+      function employeeSalary(basicSalary, bonus, allowance) {
+        const Total_Salary = basicSalary + bonus + allowance;
+        const Tax = Total_Salary / 10;
+        const Net_Salary = Total_Salary - Tax;
+
+        document.write(
+          "Total Salary of empolyee is : " + Total_Salary + "<br>",
+        );
+        document.write("Tax Amount of empolyee is : " + Tax + "<br>");
+        document.write("Net Salary of empolyee is : " + Net_Salary + "<br>");
+
+        document.write("Salary Grade based on Net Salary:" + "<br>");
+        if (Net_Salary >= 100000) {
+          document.write("Your Grade is: Grade A" + "<br>");
+        } else if (Net_Salary >= 70000) {
+          document.write("Your Grade is: Grade B" + "<br>");
+        } else {
+          document.write("Your Grade is: Grade C" + "<br>");
+        }
+      }
+      employeeSalary(500000, 20000, 10000);
+    </script>
+  </body>
+</html>

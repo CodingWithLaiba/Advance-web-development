@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Factorial of a Number Code 1
+
+        // function factorial(number){
+        //           let result = 1
+        //           for(let i= 1; i<= number; i++){
+        //                result *= i ;
+        //           }
+
+        //           document.write(number +"!=" + result +"<br>" );
+        //       }
+        //     factorial(3); //3!= 6
+
+      //Factorial of a Number Code 2
+
+      function factorial(number) {
+        let result = 1;
+        let sequence = "";
+        for (let i = number; i >= 1; i--) {
+          result *= i;
+          sequence += i + (i > 1 ? "x" : "");
+        }
+        document.write(number + "!=" + sequence + "=" + result + "<br> <br>");
+      }
+      factorial(3); //3!=3x2x1=6
+
+      //Factorial of a Number Code 3
+      // function factorial(number) {
+      //     let result = 1;
+      //     let sequence = "";
+      //     let lineLength = 0;  // track length of current line
+
+      //     for (let i = number; i >= 1; i--) {
+      //         let part = i + (i > 1 ? "x" : "");  // current piece
+      //         result *= i;
+
+      //         // check if adding this part exceeds line limit
+      //         if (lineLength + part.length > 50) {
+      //             sequence += "<br>";
+      //             lineLength = 0; // reset line length
+      //         }
+
+      //         sequence += part;
+      //         lineLength += part.length;
+      //     }
+
+      //     document.write( number + "! = " + sequence + " = " + result + "<br>");
+      //   }
+
+      // // factorial(3);   // 3! = 3x2x1 = 6
+      // factorial(77);  // 77! nicely broken into multiple lines
+
+      //Palindrome Number
+
+      function isPalindrome(num) {
+        let string = num.toString();
+        let reverse = string.split("").reverse().join("");
+        document.write(
+          string == reverse
+            ? num + " is a Palindrome <br>"
+            : num + " is not a Palindrome<br>",
+        );
+      }
+      isPalindrome(1331);
+      isPalindrome(121);
+      isPalindrome("madam");
+      isPalindrome("laiba");
+    </script>
+  </body>
+</html>
