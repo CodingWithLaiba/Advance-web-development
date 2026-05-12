@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      nav {
+        background-color: aquamarine;
+        padding: 20px;
+      }
+      .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        color: black;
+      }
+      li {
+        list-style-type: none;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .sidebar{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+      }
+      aside{
+        background-color: cadetblue;
+        width: 150px;
+        height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contat us</a></li>
+        <li><a href="#">Courses</a></li>
+      </ul>
+    </nav>
+    <aside>
+      <ul class="sidebar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contat us</a></li>
+        <li><a href="#">Courses</a></li>
+      </ul>
+    </aside>
+  </body>
+</html>
