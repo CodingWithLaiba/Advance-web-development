@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="../Bootstrap-prct/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">My College</a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="task17(home).html">Home</a>
+            </li>
+
+            <li class="nav-item">
+          <a class="nav-link" href="task17(admform).html">Admission</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="task17(about).html">About Us</a>
+        </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="bg-light text-center p-4">
+      <h1>Admission Form</h1>
+    </header>
+
+    <!-- Form -->
+    <section class="container my-5">
+      <div class="card shadow p-4">
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Phone Number</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Enter phone number"
+            />
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Select Course</label>
+
+            <select class="form-select">
+              <option selected>Select Course</option>
+              <option>BS Software Engineering</option>
+              <option>BS Computer Science</option>
+              <option>BBA</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Address</label>
+            <textarea class="form-control" rows="3"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-success">Submit Form</button>
+
+          <button type="reset" class="btn btn-danger">Reset</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center p-3">
+      <p class="mb-0">© 2026 My College | All Rights Reserved</p>
+    </footer>
+
+    <script src="../Bootstrap-prct/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
