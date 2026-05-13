@@ -9,7 +9,7 @@
     <p><?= "Current Date"?></p>
     <?php
     
- $day;
+ $day = "";
  $date = date("w");
  switch ($date) {
     case '0':
